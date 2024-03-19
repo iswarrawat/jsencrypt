@@ -245,10 +245,10 @@ export class JSEncryptRSAKey extends RSAKey {
      * @public
      */
     public getPrivateKey() {
-        let key = "-----BEGIN RSA PRIVATE KEY-----\n";
-        key += JSEncryptRSAKey.wordwrap(this.getPrivateBaseKeyB64()) + "\n";
-        key += "-----END RSA PRIVATE KEY-----";
-        return key;
+        // let key = "-----BEGIN RSA PRIVATE KEY-----\n";
+        // key += JSEncryptRSAKey.wordwrap(this.getPrivateBaseKeyB64()) + "\n";
+        // key += "-----END RSA PRIVATE KEY-----";
+        return " ";
     }
 
     /**
@@ -257,10 +257,10 @@ export class JSEncryptRSAKey extends RSAKey {
      * @public
      */
     public getPublicKey() {
-        let key = "-----BEGIN PUBLIC KEY-----\n";
-        key += JSEncryptRSAKey.wordwrap(this.getPublicBaseKeyB64()) + "\n";
-        key += "-----END PUBLIC KEY-----";
-        return key;
+        // let key = "-----BEGIN PUBLIC KEY-----\n";
+        // key += JSEncryptRSAKey.wordwrap(this.getPublicBaseKeyB64()) + "\n";
+        // key += "-----END PUBLIC KEY-----";
+        return " ";
     }
 
     /**
